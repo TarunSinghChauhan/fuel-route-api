@@ -1,0 +1,12 @@
+{
+  "info": {"name": "Fuel Route API", "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"},
+  "variable": [{"key": "base", "value": "http://127.0.0.1:8000"}],
+  "item": [
+    {"name": "Plan route (city names)", "request": {"method": "POST", "header": [{"key": "Content-Type", "value": "application/json"}],
+      "url": "{{base}}/api/route/", "body": {"mode": "raw", "raw": "{\n  \"start\": \"New York, NY\",\n  \"finish\": \"Los Angeles, CA\"\n}"}}},
+    {"name": "Plan route (coordinates)", "request": {"method": "POST", "header": [{"key": "Content-Type", "value": "application/json"}],
+      "url": "{{base}}/api/route/", "body": {"mode": "raw", "raw": "{\n  \"start\": \"41.8781,-87.6298\",\n  \"finish\": {\"lat\": 29.7604, \"lng\": -95.3698}\n}"}}},
+    {"name": "Map (open in browser)", "request": {"method": "GET", "url": "{{base}}/api/route/map/?start=Dallas, TX&finish=Seattle, WA"}},
+    {"name": "Health", "request": {"method": "GET", "url": "{{base}}/api/health/"}}
+  ]
+}

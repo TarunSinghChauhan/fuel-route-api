@@ -1,0 +1,17 @@
+### Plan route (New York to Los Angeles)
+POST http://127.0.0.1:8000/api/route/
+Content-Type: application/json
+
+{
+  "start": "New York, NY",
+  "finish": "Los Angeles, CA"
+}
+
+### Plan route (Dallas to Seattle)
+POST http://127.0.0.1:8000/api/route/
+Content-Type: application/json
+
+{
+  "start": "Dallas, TX",
+  "finish": "Seattle, WA"
+}

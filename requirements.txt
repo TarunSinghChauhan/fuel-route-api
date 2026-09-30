@@ -1,0 +1,5 @@
+Django>=6.0,<7.0
+numpy>=2.0
+scipy>=1.13
+requests>=2.32
+gunicorn>=22.0
